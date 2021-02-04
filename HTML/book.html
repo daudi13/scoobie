@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="X-UA-Compatible" name="ie=edge">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/secondary.css">
+    <title>book</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+    
+            <h1 class="logo"><a href="../HTML/index.html">Chewy&trade;</a></h1>
+            <ul class="nav">
+                <li><a href="../HTML/index.html" >Home</a></li>
+                <li><a href="#pets">pets</a></li>
+                <li><a href="../HTML/book.html" class="active">adopt</a></li>
+                <li><a href="#about">about</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- header for max-width 700px -->
+    <header>
+        <h1 class="logo">Chewy&trade;</h1>
+        <button class="nav-toggle">
+            <span class="ham--icon" id="ham--icon"></span>
+        </button>
+        <nav>
+            <ul class="nav--list">
+                <li class="nav--item"><a href="" class="nav__link">home</a></li>
+                <li class="nav--item"><a href="" class="nav__link">pets</a></li>
+                <li class="nav--item"><a href="" class="nav__link active-page">adopt</a></li>
+                <li class="nav--item"><a href="" class="nav__link">about</a></li>
+            </ul>
+        </nav>
+        <script src="../JS/index.js"></script>
+    </header>
+    <!-- END -->
+    <!-- showcase -->
+    <div class="surveyForm">
+        <!-- this is the title of the form -->
+        <div class="header">
+            <p id="description" class="description text-center">Thank you for trusting us with your canine family member</p>
+        </div>
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="enter your name"
+                required >
+            </div> 
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone-number" id="phone-number">Phone phone-number</label>
+                <input type="tel" name="tel" id="tell" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <p>which best describes your reason to leave your dog with us</p>
+                <select name="reason" id="reason" class="form-control" required>
+                    <option value="blank" selected>--</option>
+                    <option value="job">workation</option>
+                    <option value="study">Study Leave</option>
+                    <option value="hospital">Hospital admission</option>
+                    <option value="other">Other Reasons</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>How old is your dog</p>
+                <input type="number" name="age" id="number" min="1" max="18" class="form-control">
+            </div>
+            <div class="form-group">
+                <p>Does your dog require any special diet</p><label>
+                <input type="radio" name="special-diet" class="input-radio" value="Yes" checked>Yes</label>
+                <label>
+                    <input type="radio" 
+                    class="input-radio"
+                    name="special-diet" value="No" >No
+                </label>
+            </div>
+            <div class="form-group">
+                <p>if yes please leave a short description below</p>
+                <textarea name="comment" id="comments" class="input-textarea" placeholder="Enter your description here..."></textarea>
+            </div>
+            <div class="form-group">
+                <p>what are the main area you'd want us to focus on while your dog is here <span class="clue">(Check all that apply)</span></p>
+                <label><input type="checkbox" name="prefer" value="special-diet" class="input-checkbox">Special Diet</label>
+                <label><input type="checkbox" name="prefer" value="exercise" class="input-checkbox">Exercise</label>
+                <label><input type="checkbox" name="prefer" value="training" class="input-checkbox">Trainig</label>
+                <label><input type="checkbox" 
+                name="prefer" value="therapy" class="input-checkbox">therapy</label>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
